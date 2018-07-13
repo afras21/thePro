@@ -13,12 +13,14 @@ import { LoginComponent } from './login/login.component';
 import {ButtonModule} from 'primeng/button';
 import {MenuItem} from 'primeng/api';
 import { MenuComponent } from './menu/menu.component';
+import { AdminPageComponent } from './admin-page/admin-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    MenuComponent
+    MenuComponent,
+    AdminPageComponent
   ],
   imports: [
     BrowserModule,
