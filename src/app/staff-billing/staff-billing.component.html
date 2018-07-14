@@ -1,0 +1,28 @@
+<div>
+
+
+
+  <div> <app-menu></app-menu></div>
+  <div>
+    <img src="./assets/billylogo.jpg" style="width: 100px ;height: 100px ; margin: 5%" >
+
+  </div>
+
+  <div  >
+
+    <!--id-->
+    <p-autoComplete [(ngModel)]="text" [suggestions]="results" (completeMethod)="search($event)" placeholder="Id" ></p-autoComplete>
+
+
+    <p-autoComplete [(ngModel)]="text" [suggestions]="results" (completeMethod)="search($event)" placeholder="  Staff Name" ></p-autoComplete>
+
+    <!--gst-->
+    <p-autoComplete [(ngModel)]="val" [suggestions]="results"  (completeMethod)="search($event)" placeholder="   Password" [forceSelection]="true"></p-autoComplete>
+
+
+  </div>
+  <div style="margin: 10px">
+    <p-button label="Add Staff"></p-button>
+
+</div>
+</div>

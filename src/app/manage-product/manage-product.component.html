@@ -1,0 +1,30 @@
+
+
+<div> <app-menu></app-menu></div>
+<div>
+  <img src="./assets/billylogo.jpg" style="width: 100px ;height: 100px ; margin: 5%" >
+
+</div>
+
+<!--product title-->
+
+<div  >
+
+  <!--id-->
+  <p-autoComplete [(ngModel)]="text" [suggestions]="results" (completeMethod)="search($event)" placeholder="Id" ></p-autoComplete>
+
+
+  <p-autoComplete [(ngModel)]="text" [suggestions]="results" (completeMethod)="search($event)" placeholder="   enter item" ></p-autoComplete>
+
+  <!--gst-->
+<p-autoComplete [(ngModel)]="val" [suggestions]="results"  (completeMethod)="search($event)" placeholder="   Qty" [forceSelection]="true"></p-autoComplete>
+
+<!--price-->
+  <p-autoComplete [(ngModel)]="val" [suggestions]="results" (completeMethod)="search($event)" placeholder="   Price" [forceSelection]="true"></p-autoComplete>
+
+  <p-autoComplete [(ngModel)]="val" [suggestions]="results" (completeMethod)="search($event)" placeholder="   GST" [forceSelection]="true"></p-autoComplete>
+
+</div>
+<div style="margin: 10px">
+  <p-button label="Add Item"></p-button>
+</div>
